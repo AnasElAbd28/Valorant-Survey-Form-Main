@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pygmalion Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Valorant Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <div class="container">
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter your name: <input type = "text" id ="name" name= "Name" placeholder="Anas Elabd" required>
+        </label>
+        <label for="email" id="email-label">Enter your email: <input type="email" id="email" name="Email" placeholder="test@email.com" required></label>
+        <label for="id">Valorant ID: <input type="text" id ="id" name="ID" placeholder="Pygmalion"></label>
+        <label for="number" id="number-label">Age: <input type="number" id="number" name="Age" min="13" max="120" placeholder="eg: 18"></label>
+      </fieldset>
+      <fieldset>
+        <label for="rank">Select your rank: 
+          <select id="dropdown">
+            <option>Iron</option>
+            <option>Bronze</option>
+            <option>Silver</option>
+            <option>Gold</option>
+            <option>Platinum</option>
+            <option>Ascendant</option>
+            <option>Diamond</option>
+            <option>Immortal</option>
+            <option>Radiant</option>
+          </select>
+        </label>
+        <label>What Update would you like next?</label>
+        <label for="newAgent"><input type="checkbox" id="newAgent"name="update" value="newAgent" > New Agent</label>
+        <label for="newMap"><input type="checkbox" id="newMap" name="update" value="newMap"> New Map</label>
+        <label for="newWeapon"><input type="checkbox" id="newWeapon" name="update" value="newWeapon"> New Weapon</label>
+        <label>Would you like a replay feature in Valorant?</label>
+        <label for="yes"><input type="radio" id="yes" name="replay" value="yes">Yes</label>
+        <label for="no"><input type="radio" id="no" name="replay" value="no">No</label>
+
+        <label for="feedback">give us your feedback on the latest update: <textarea id="feedback" name="feedback"></textarea></label>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+  </div>
+
+  </body>
+</html>
